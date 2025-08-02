@@ -1,0 +1,33 @@
+Predictive Restaurant Recommender
+
+
+Project Overview
+The goal of this project was to build a machine learning model to predict which restaurants a customer is most likely to order from.
+
+What's in This Folder
+recommender_model_notebook.ipynb: My main notebook where I did all the work.
+
+app.py: A simple app I built with Streamlit to show how the model works.
+
+submission.csv: The final file with all my predictions.
+
+requirements.txt: A list of all the Python libraries you need.
+
+The .csv data files and the two .joblib model files.
+
+How I Built It
+First, I prepared the data by cleaning it up and handling missing values. Then, I created a new, important feature by calculating the distance_km between the customer and the restaurant.
+
+I used a machine learning algorithm called a Random Forest Classifier to train a model to predict if an order would happen (1) or not (0).
+
+My Submission
+I have included the submission.csv file, which is the final deliverable.
+
+I also went a step further and created a small Streamlit app. I thought this would be a cool way to make the project easy to understand for anyone, not just someone who can read Python code. It helps to show how the model thinks and why it makes a prediction.
+
+How to Run the Code
+Make sure you have all the files in one place.
+
+Install the required libraries by running pip install -r requirements.txt.
+
+To see the app, open your terminal and type streamlit run app.py.
